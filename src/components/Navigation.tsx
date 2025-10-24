@@ -46,6 +46,18 @@ const Navigation = () => {
               Home
             </Link>
             <Link
+              to="/tools"
+              className={`font-body font-medium transition-all duration-300 relative ${
+                isActive("/tools")
+                  ? "text-primary"
+                  : "text-foreground hover:text-primary"
+              } after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 ${
+                isActive("/tools") ? "after:scale-x-100" : ""
+              }`}
+            >
+              Tools
+            </Link>
+            <Link
               to="/about"
               className={`font-body font-medium transition-all duration-300 relative ${
                 isActive("/about")

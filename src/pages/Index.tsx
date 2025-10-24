@@ -10,6 +10,12 @@ import {
   CheckCircle2,
   Hash,
   Archive,
+  Image,
+  FileCode,
+  Scissors,
+  Download,
+  ScanText,
+  Languages,
 } from "lucide-react";
 
 const Index = () => {
@@ -59,7 +65,7 @@ const Index = () => {
             Explore More Tools
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 max-w-6xl mx-auto mb-16">
             <CircleToolCard
               icon={<CheckCircle2 />}
               title="Grammar Checker"
@@ -77,6 +83,42 @@ const Index = () => {
               title="File Compressor"
               color="primary"
               link="/file-compressor"
+            />
+            <CircleToolCard
+              icon={<Image />}
+              title="Image Converter"
+              color="red"
+              link="/image-converter"
+            />
+            <CircleToolCard
+              icon={<FileCode />}
+              title="Code Formatter"
+              color="primary"
+              link="/code-formatter"
+            />
+            <CircleToolCard
+              icon={<Scissors />}
+              title="Text Splitter"
+              color="orange"
+              link="/text-splitter"
+            />
+            <CircleToolCard
+              icon={<Download />}
+              title="Video Downloader"
+              color="red"
+              link="/video-downloader"
+            />
+            <CircleToolCard
+              icon={<ScanText />}
+              title="OCR Scanner"
+              color="purple"
+              link="/ocr-scanner"
+            />
+            <CircleToolCard
+              icon={<Languages />}
+              title="Translator"
+              color="primary"
+              link="/translator"
             />
           </div>
         </div>
